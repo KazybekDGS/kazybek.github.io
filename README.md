@@ -1,13 +1,6 @@
-# Kazybek Portfolio v3
+# Kazybek Portfolio v4
 
-This version adds **Cyberpunk: Great Steppe** as a portfolio case.
+Easy GitHub upload version.
 
-Files to upload to the root of the GitHub Pages repository:
-- index.html
-- style.css
-- script.js
-- great-steppe.html
-- Cyberpunk-Great-Steppe-Project.pptx
-- assets/ (entire folder)
-
-Important: upload the `assets` folder with its `great-steppe` subfolder so all 16 presentation slides appear on the case page.
+Upload ALL files from this folder directly to the root of the GitHub Pages repository.
+The 16 Great Steppe slide images are now in the same folder as `index.html`, so there are no nested asset folders to lose.
