@@ -1,6 +1,8 @@
-# Kazybek Portfolio v4
+# Kazybek Portfolio v7
 
-Easy GitHub upload version.
+Includes:
+- Cyberpunk: Great Steppe presentation and custom project preview
+- Lone Lands custom project preview
+- English default / Russian language switch
 
-Upload ALL files from this folder directly to the root of the GitHub Pages repository.
-The 16 Great Steppe slide images are now in the same folder as `index.html`, so there are no nested asset folders to lose.
+Upload ALL files directly to the root of the GitHub Pages repository.
