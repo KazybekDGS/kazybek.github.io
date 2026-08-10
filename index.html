@@ -3,124 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kazybek — Game Designer & Creative Designer portfolio.">
 <title>Kazybek — Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a class="logo" href="#home">K.</a>
+  <a class="brand" href="#home"><span>K</span>azybek</a>
   <nav>
     <a href="#about" data-i18n="nav_about">About</a>
-    <a href="#projects" data-i18n="nav_projects">Projects</a>
+    <a href="#work" data-i18n="nav_work">Work</a>
     <a href="#skills" data-i18n="nav_skills">Skills</a>
     <a href="#contact" data-i18n="nav_contact">Contact</a>
   </nav>
-  <button id="langToggle" class="lang" type="button">RU</button>
+  <button id="langToggle" class="lang">RU</button>
 </header>
 
 <main>
 <section id="home" class="hero">
-  <p class="eyebrow">PORTFOLIO / 2026</p>
-  <h1>Kazybek</h1>
-  <h2>Game Designer<br>& Creative Designer</h2>
-  <p class="lead" data-i18n="hero_lead">I create game ideas, mechanics, worlds and visual projects.</p>
-  <div class="buttons">
-    <a class="button primary" href="#projects" data-i18n="hero_projects">View projects</a>
-    <a class="button" href="#contact" data-i18n="hero_contact">Get in touch</a>
+  <div class="hero-copy">
+    <p class="kicker">GAME DESIGNER / CREATIVE DESIGNER</p>
+    <h1>Designing ideas<br><em>into worlds.</em></h1>
+    <p class="hero-text" data-i18n="hero_text">I create game concepts, mechanics, stories, worlds and visual experiences — from the first idea to a clear playable vision.</p>
+    <div class="hero-actions">
+      <a class="btn light" href="#work" data-i18n="view_work">View my work</a>
+      <a class="text-link" href="#contact" data-i18n="contact_me">Contact me ↗</a>
+    </div>
+  </div>
+  <div class="hero-mark">
+    <div class="orb">K<span>•</span></div>
+    <p>PORTFOLIO<br>2026</p>
   </div>
 </section>
 
 <section id="about" class="section about">
+  <div class="section-label">01 / <span data-i18n="about_label">ABOUT</span></div>
   <div>
-    <p class="eyebrow">01 — ABOUT</p>
-    <h2 data-i18n="about_title">About me</h2>
-  </div>
-  <div class="text">
-    <p data-i18n="about_p1">I'm Kazybek — a creator working at the intersection of game design, creativity and digital design.</p>
-    <p data-i18n="about_p2">I enjoy creating game concepts, mechanics, characters, worlds and stories, while also developing visual content and my own projects.</p>
-    <p data-i18n="about_p3">This website is my working portfolio. New projects and experiments will be added here.</p>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">02 — SELECTED WORK</p>
-      <h2 data-i18n="projects_title">Projects</h2>
+    <h2 data-i18n="about_title">A designer who<br><em>builds worlds.</em></h2>
+    <div class="about-grid">
+      <p data-i18n="about_p1">I'm Kazybek, a game and creative designer focused on turning ideas into structured concepts, mechanics and experiences.</p>
+      <p data-i18n="about_p2">I work with game design, narrative design, worldbuilding and visual design. I also develop my own game projects and fictional universes.</p>
     </div>
-    <p class="muted" data-i18n="projects_hint">New work will be added here as it develops.</p>
-  </div>
-
-  <div class="grid">
-    <article class="project">
-      <div class="project-image">LONELANDS</div>
-      <div class="project-info">
-        <span>GAME DESIGN / SURVIVAL</span>
-        <h3>Lonelands</h3>
-        <p data-i18n="lonelands_desc">A post-apocalyptic game focused on exploration, factions, survival and a distinctive atmosphere.</p>
-        <a href="#" data-i18n="details">View project →</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project-image">ИЛСОНЫ</div>
-      <div class="project-info">
-        <span>NARRATIVE / WORLD</span>
-        <h3 data-i18n="ilsons_title">Between Worlds: The Ilsons</h3>
-        <p data-i18n="ilsons_desc">A story about family, parallel worlds, portals and the consequences of experiments.</p>
-        <a href="#" data-i18n="details">View project →</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project-image">PROJECT 03</div>
-      <div class="project-info">
-        <span>GAME DESIGN</span>
-        <h3 data-i18n="new_project">New project</h3>
-        <p data-i18n="new_project_desc">A description of the next project will appear here.</p>
-        <a href="#" data-i18n="details">View project →</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project-image">DESIGN</div>
-      <div class="project-info">
-        <span>GRAPHIC DESIGN</span>
-        <h3 data-i18n="design_title">Design & Visuals</h3>
-        <p data-i18n="design_desc">Product cards, infographics, banners and other visual work.</p>
-        <a href="#" data-i18n="details">View project →</a>
-      </div>
-    </article>
+    <div class="availability"><span></span><strong data-i18n="available">Available for work</strong><small data-i18n="available_desc">Open to projects, collaborations and creative opportunities.</small></div>
   </div>
 </section>
 
-<section id="skills" class="section">
-  <p class="eyebrow">03 — SKILLS</p>
-  <h2 data-i18n="skills_title">What I do</h2>
-  <div class="skills">
-    <span>Game Design</span><span>GDD</span><span>Game Mechanics</span>
-    <span>Level Design</span><span>Narrative Design</span><span>Worldbuilding</span>
-    <span>Storytelling</span><span>Graphic Design</span><span>Infographics</span>
-    <span>Concept Development</span>
+<section id="work" class="section work">
+  <div class="section-top">
+    <div class="section-label">02 / <span data-i18n="work_label">SELECTED WORK</span></div>
+    <p data-i18n="work_intro">A selection of concepts and creative projects. More work will be added over time.</p>
   </div>
+
+  <article class="case featured">
+    <div class="case-visual"><span>01</span><strong>LONELANDS</strong><small>POST-NUCLEAR / SURVIVAL</small></div>
+    <div class="case-content">
+      <p class="tag">GAME DESIGN · WORLD BUILDING</p>
+      <h3>Lonelands</h3>
+      <p data-i18n="lonelands_desc">A post-nuclear survival game set in a harsh version of the Kazakh steppe. Exploration, factions, resources and atmosphere drive the experience.</p>
+      <div class="meta"><div><b data-i18n="role">ROLE</b><span>Game Designer</span></div><div><b data-i18n="focus">FOCUS</b><span>Mechanics · Worldbuilding · GDD</span></div></div>
+      <a class="case-link" href="#" data-i18n="case_study">View case study →</a>
+    </div>
+  </article>
+
+  <div class="case-grid">
+    <article class="case">
+      <div class="case-visual visual-two"><span>02</span><strong>THE ILSONS</strong><small>NARRATIVE / MULTIVERSE</small></div>
+      <div class="case-content">
+        <p class="tag">NARRATIVE DESIGN · WORLDBUILDING</p>
+        <h3 data-i18n="ilsons_title">Between Worlds: The Ilsons</h3>
+        <p data-i18n="ilsons_desc">A family story built around parallel worlds, portals, identity and the consequences of experiments.</p>
+        <a class="case-link" href="#" data-i18n="case_study">View case study →</a>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-visual visual-three"><span>03</span><strong>VISUAL DESIGN</strong><small>GRAPHIC / E-COMMERCE</small></div>
+      <div class="case-content">
+        <p class="tag">GRAPHIC DESIGN · INFOGRAPHICS</p>
+        <h3 data-i18n="visual_title">Visual Design</h3>
+        <p data-i18n="visual_desc">Product cards, infographics, banners and other visual concepts for digital projects.</p>
+        <a class="case-link" href="#" data-i18n="case_study">View case study →</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="coming"><span>04</span><p data-i18n="coming">More projects are coming.</p></div>
+</section>
+
+<section id="skills" class="section skills-section">
+  <div class="section-label">03 / <span data-i18n="skills_label">CAPABILITIES</span></div>
+  <div class="skills-layout">
+    <h2 data-i18n="skills_title">What I<br><em>do.</em></h2>
+    <div class="skill-list">
+      <div><b>01</b><h3>Game Design</h3><p>GDD · Mechanics · Systems · Balancing · Level Design</p></div>
+      <div><b>02</b><h3>Narrative Design</h3><p>Story · Characters · Worldbuilding · Dialogue · Lore</p></div>
+      <div><b>03</b><h3>Visual Design</h3><p>Product Cards · Infographics · Banners · Concepts</p></div>
+      <div><b>04</b><h3>Creative Development</h3><p>Concepts · Prototypes · Research · Project Direction</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tools">
+  <div class="section-label">04 / <span data-i18n="tools_label">TOOLS</span></div>
+  <div class="tool-row"><span>Unreal Engine</span><span>GameGuru MAX</span><span>Blender</span><span>GitHub</span><span>GDD</span></div>
 </section>
 
 <section id="contact" class="section contact">
-  <p class="eyebrow">04 — CONTACT</p>
-  <h2 data-i18n="contact_title">Let's create<br>something interesting.</h2>
-  <p class="muted" data-i18n="contact_hint">Replace the links below with your contacts.</p>
-  <div class="contact-links">
-    <a href="https://t.me/" target="_blank">Telegram ↗</a>
-    <a href="mailto:your@email.com">Email ↗</a>
-    <a href="#" target="_blank">GitHub ↗</a>
+  <div class="section-label">05 / CONTACT</div>
+  <div>
+    <h2 data-i18n="contact_title">Have an idea?<br><em>Let's talk.</em></h2>
+    <p data-i18n="contact_text">I'm open to game projects, creative work, collaborations and new opportunities.</p>
+    <div class="contact-links"><a href="mailto:your@email.com">Email ↗</a><a href="https://t.me/" target="_blank">Telegram ↗</a><a href="#" target="_blank">GitHub ↗</a></div>
   </div>
 </section>
 </main>
 
-<footer>
-  <span>© 2026 Kazybek</span>
-  <span data-i18n="motto">From idea to reality.</span>
-</footer>
+<footer><span>© 2026 Kazybek</span><span data-i18n="footer">From idea to reality.</span></footer>
 <script src="script.js"></script>
 </body>
 </html>

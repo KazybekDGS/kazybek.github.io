@@ -1,58 +1,37 @@
-const translations = {
-  en: {
-    nav_about:"About", nav_projects:"Projects", nav_skills:"Skills", nav_contact:"Contact",
-    hero_lead:"I create game ideas, mechanics, worlds and visual projects.",
-    hero_projects:"View projects", hero_contact:"Get in touch",
-    about_title:"About me",
-    about_p1:"I'm Kazybek — a creator working at the intersection of game design, creativity and digital design.",
-    about_p2:"I enjoy creating game concepts, mechanics, characters, worlds and stories, while also developing visual content and my own projects.",
-    about_p3:"This website is my working portfolio. New projects and experiments will be added here.",
-    projects_title:"Projects", projects_hint:"New work will be added here as it develops.",
-    lonelands_desc:"A post-apocalyptic game focused on exploration, factions, survival and a distinctive atmosphere.",
-    ilsons_title:"Between Worlds: The Ilsons",
-    ilsons_desc:"A story about family, parallel worlds, portals and the consequences of experiments.",
-    new_project:"New project", new_project_desc:"A description of the next project will appear here.",
-    design_title:"Design & Visuals", design_desc:"Product cards, infographics, banners and other visual work.",
-    details:"View project →", skills_title:"What I do",
-    contact_title:"Let's create<br>something interesting.",
-    contact_hint:"Replace the links below with your contacts.", motto:"From idea to reality."
-  },
-  ru: {
-    nav_about:"Обо мне", nav_projects:"Проекты", nav_skills:"Навыки", nav_contact:"Контакты",
-    hero_lead:"Создаю игровые идеи, механики, миры и визуальные проекты.",
-    hero_projects:"Смотреть проекты", hero_contact:"Связаться",
-    about_title:"Обо мне",
-    about_p1:"Я Казыбек — специалист, работающий на стыке геймдизайна, творчества и цифрового дизайна.",
-    about_p2:"Мне нравится создавать игровые концепции, механики, персонажей, миры и истории, а также развивать визуальный контент и собственные проекты.",
-    about_p3:"Этот сайт — моё рабочее портфолио. Здесь будут появляться новые проекты и эксперименты.",
-    projects_title:"Проекты", projects_hint:"Новые работы будут появляться здесь по мере их разработки.",
-    lonelands_desc:"Постъядерная игра с исследованием мира, фракциями, выживанием и собственной атмосферой.",
-    ilsons_title:"Между мирами: Илсоны",
-    ilsons_desc:"История о семье, параллельных мирах, порталах и последствиях экспериментов.",
-    new_project:"Новый проект", new_project_desc:"Здесь появится описание следующего проекта.",
-    design_title:"Дизайн и визуал", design_desc:"Карточки товаров, инфографика, баннеры и другие визуальные работы.",
-    details:"Подробнее →", skills_title:"Что я умею",
-    contact_title:"Давай создадим<br>что-нибудь интересное.",
-    contact_hint:"Замени ссылки ниже на свои контакты.", motto:"Из идеи — в реальность."
-  }
-};
-
-const toggle = document.getElementById("langToggle");
-let lang = localStorage.getItem("portfolioLang") || "en";
-
-function applyLanguage() {
-  document.documentElement.lang = lang;
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const value = translations[lang][el.dataset.i18n];
-    if (value) el.innerHTML = value;
-  });
-  toggle.textContent = lang === "en" ? "RU" : "EN";
-  localStorage.setItem("portfolioLang", lang);
-}
-
-toggle.addEventListener("click", () => {
-  lang = lang === "en" ? "ru" : "en";
-  applyLanguage();
-});
-
-applyLanguage();
+const t={
+en:{
+nav_about:"About",nav_work:"Work",nav_skills:"Skills",nav_contact:"Contact",
+hero_text:"I create game concepts, mechanics, stories, worlds and visual experiences — from the first idea to a clear playable vision.",
+view_work:"View my work",contact_me:"Contact me ↗",
+about_label:"ABOUT",about_title:"A designer who<br><em>builds worlds.</em>",
+about_p1:"I'm Kazybek, a game and creative designer focused on turning ideas into structured concepts, mechanics and experiences.",
+about_p2:"I work with game design, narrative design, worldbuilding and visual design. I also develop my own game projects and fictional universes.",
+available:"Available for work",available_desc:"Open to projects, collaborations and creative opportunities.",
+work_label:"SELECTED WORK",work_intro:"A selection of concepts and creative projects. More work will be added over time.",
+lonelands_desc:"A post-nuclear survival game set in a harsh version of the Kazakh steppe. Exploration, factions, resources and atmosphere drive the experience.",
+role:"ROLE",focus:"FOCUS",case_study:"View case study →",
+ilsons_title:"Between Worlds: The Ilsons",ilsons_desc:"A family story built around parallel worlds, portals, identity and the consequences of experiments.",
+visual_title:"Visual Design",visual_desc:"Product cards, infographics, banners and other visual concepts for digital projects.",
+coming:"More projects are coming.",skills_label:"CAPABILITIES",skills_title:"What I<br><em>do.</em>",tools_label:"TOOLS",
+contact_title:"Have an idea?<br><em>Let's talk.</em>",contact_text:"I'm open to game projects, creative work, collaborations and new opportunities.",footer:"From idea to reality."
+},
+ru:{
+nav_about:"Обо мне",nav_work:"Работы",nav_skills:"Навыки",nav_contact:"Контакты",
+hero_text:"Создаю игровые концепции, механики, истории, миры и визуальные проекты — от первой идеи до понятного игрового видения.",
+view_work:"Смотреть работы",contact_me:"Связаться ↗",
+about_label:"ОБО МНЕ",about_title:"Дизайнер, который<br><em>создаёт миры.</em>",
+about_p1:"Я Казыбек — геймдизайнер и креативный дизайнер, превращающий идеи в структурированные концепции, механики и игровые впечатления.",
+about_p2:"Работаю с геймдизайном, нарративным дизайном, миростроением и визуальным дизайном. Также развиваю собственные игровые проекты и вымышленные вселенные.",
+available:"Открыт к работе",available_desc:"Открыт к проектам, сотрудничеству и новым творческим возможностям.",
+work_label:"ИЗБРАННЫЕ РАБОТЫ",work_intro:"Подборка концепций и творческих проектов. Новые работы будут добавляться со временем.",
+lonelands_desc:"Постъядерная survival-игра в суровой версии казахской степи. Исследование, фракции, ресурсы и атмосфера — основа игрового опыта.",
+role:"РОЛЬ",focus:"ФОКУС",case_study:"Открыть кейс →",
+ilsons_title:"Между мирами: Илсоны",ilsons_desc:"Семейная история о параллельных мирах, порталах, личности и последствиях экспериментов.",
+visual_title:"Визуальный дизайн",visual_desc:"Карточки товаров, инфографика, баннеры и другие визуальные концепции для цифровых проектов.",
+coming:"Новые проекты скоро появятся.",skills_label:"ВОЗМОЖНОСТИ",skills_title:"Что я<br><em>делаю.</em>",tools_label:"ИНСТРУМЕНТЫ",
+contact_title:"Есть идея?<br><em>Давайте обсудим.</em>",contact_text:"Открыт к игровым проектам, креативной работе, сотрудничеству и новым возможностям.",footer:"Из идеи — в реальность."
+}};
+let lang=localStorage.getItem("portfolioLang")||"en";
+const btn=document.getElementById("langToggle");
+function apply(){document.documentElement.lang=lang;document.querySelectorAll("[data-i18n]").forEach(e=>{const v=t[lang][e.dataset.i18n];if(v)e.innerHTML=v});btn.textContent=lang==="en"?"RU":"EN";localStorage.setItem("portfolioLang",lang)}
+btn.onclick=()=>{lang=lang==="en"?"ru":"en";apply()};apply();
