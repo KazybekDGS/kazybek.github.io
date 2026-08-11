@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deborah Adventures: Mr. Fear — Kazybek</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.case-page{padding:58px 8vw 120px}
+.project-nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.project-nav a{color:#aaa;font-size:13px}
+.project-hero{padding:45px 0 70px}
+.project-hero img{width:100%;display:block;border:1px solid #292929}
+.project-title{margin-top:38px;display:grid;grid-template-columns:1.25fr .75fr;gap:6vw}
+.project-title h1{font-size:clamp(48px,7vw,105px);line-height:.86;letter-spacing:-.065em;margin:0}
+.project-title p{color:#999;max-width:580px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.badges span{border:1px solid #333;border-radius:999px;padding:8px 12px;color:#bbb;font-size:11px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.presentation{border-top:1px solid #292929;padding-top:65px}
+.presentation-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
+.presentation-head h2{font-size:clamp(38px,5vw,72px);letter-spacing:-.045em;margin:0}
+.presentation-head p{color:#777;max-width:460px}
+.web-slide{min-height:520px;border:1px solid #2d2d2d;background:#101010;margin:0 0 28px;padding:52px;display:grid;grid-template-columns:70px 1fr;gap:30px;position:relative;overflow:hidden}
+.web-slide .num{color:#555;font-size:11px;letter-spacing:.15em}
+.web-slide h3{font-size:clamp(32px,5vw,64px);letter-spacing:-.04em;margin:0 0 25px}
+.web-slide p,.web-slide li{color:#aaa;font-size:16px;max-width:900px}
+.web-slide ul{padding-left:18px}
+.web-slide .visuals{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.web-slide .visuals img{height:170px;max-width:100%;object-fit:cover;border:1px solid #292929}
+.play-box{margin-top:55px;padding:40px;border:1px solid #333;background:#111}
+.play-box h2{margin-top:0}
+@media(max-width:800px){
+.case-page{padding:35px 5vw 80px}.project-title{grid-template-columns:1fr}.web-slide{padding:28px;grid-template-columns:1fr;min-height:auto}.web-slide .visuals img{height:auto;width:100%}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><span>K</span>azybek</a>
+  <div class="project-nav">
+    <a href="index.html#work">← Portfolio</a>
+    <button id="langToggle" class="lang">RU</button>
+  </div>
+</header>
+
+<main class="case-page">
+<section class="project-hero">
+  <img src="deborah-banner.png" alt="Deborah Adventures: Mr. Fear">
+  <div class="project-title">
+    <div>
+      <p class="kicker">RELEASED PROJECT / ADVENTURE / PC</p>
+      <h1>Deborah Adventures:<br><em>Mr. Fear</em></h1>
+    </div>
+    <div>
+      <p data-i18n="intro">A single-player top-down adventure and my first released game project. Deborah Howard, a professional treasure hunter, joins a reconnaissance squad sent to investigate the disappearance of three employees on Island “L”.</p>
+      <div class="badges"><span>Released</span><span>PC</span><span>Singleplayer</span><span>RPG Maker</span><span>itch.io</span></div>
+      <div class="actions">
+        <a class="btn light" href="#presentation" data-i18n="viewDeck">View presentation</a>
+        <a class="btn" href="https://diversity-games-studios.itch.io/deborah-adventures-mr-fear" target="_blank" rel="noopener" data-i18n="playGame">Play on itch.io ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="presentation" class="presentation">
+  <div class="presentation-head">
+    <h2 data-i18n="presentationTitle">Project presentation</h2>
+    <p data-i18n="presentationText">Web version based on the original project presentation.</p>
+  </div>
+
+  <article class="web-slide"><div class="num">01 / 09</div><div><h3>Deborah Adventures: Mr. Fear</h3><p>Author: Kazybek Yeleussizov<br>Diversity Games Studios</p><div class="visuals"><img src="deborah-media-01.png" alt=""></div></div></article>
+
+  <article class="web-slide"><div class="num">02 / 09</div><div><h3 data-i18n="information">Information</h3><ul><li>Purpose: Demonstration of the project and showing the results of development.</li><li>Genre: Adventure.</li><li>Mode: Singleplayer.</li><li>Platform: PC.</li></ul><div class="visuals"><img src="deborah-media-02.png" alt=""><img src="deborah-media-03.jpg" alt=""></div></div></article>
+
+  <article class="web-slide"><div class="num">03 / 09</div><div><h3 data-i18n="setting">Setting and some background</h3><p>The world is similar to our world. In 1984, friendly young families start their own treasure hunting company called “We are Everywhere”. In 1998, the company opened a treasure hunt academy. In 2002, Deborah Howard enters this academy; in 2008 she finishes and goes to work. In 2010, three employees disappear on Island “L”. The company sends a reconnaissance squad, and Deborah is on that squad.</p><div class="visuals"><img src="deborah-media-05.jpg" alt=""><img src="deborah-media-08.png" alt=""><img src="deborah-media-09.jpg" alt=""></div></div></article>
+
+  <article class="web-slide"><div class="num">04 / 09</div><div><h3>3C</h3><ul><li>Character: Deborah is a treasure hunter.</li><li>Camera: Top down, third person.</li><li>W A S D — Movement.</li><li>Space — Jump.</li><li>LMB / Enter — Interactions.</li></ul><div class="visuals"><img src="deborah-media-10.png" alt=""><img src="deborah-media-12.jpg" alt=""><img src="deborah-media-14.jpg" alt=""></div></div></article>
+
+  <article class="web-slide"><div class="num">05 / 09</div><div><h3 data-i18n="gameplay">Gameplay</h3><p>The gameplay consists of passing obstacles, puzzles and collecting keys in levels.</p><div class="visuals"><img src="deborah-media-16.jpg" alt=""></div></div></article>
+
+  <article class="web-slide"><div class="num">06 / 09</div><div><h3 data-i18n="damage">Damage system</h3><p>When the player touches damaging objects, health is reduced and the player is pushed back with a visual effect. Spike damage: 5. Mob damage: 2. Large first-aid kits give 75 health; small first-aid kits give 25.</p></div></article>
+
+  <article class="web-slide"><div class="num">07 / 09</div><div><h3 data-i18n="obstacles">Obstacle system</h3><p>The jump mechanic helps players pass spikes. Movable objects can be a main or additional level mechanic. Players also use keys and PIN codes to progress through levels.</p></div></article>
+
+  <article class="web-slide"><div class="num">08 / 09</div><div><h3 data-i18n="additional">Additional mechanics</h3><p>Later, the player finds a bat for protection in enemy encounters. The project also includes companions, and on some levels the player changes characters.</p></div></article>
+
+  <article class="web-slide"><div class="num">09 / 09</div><div><h3 data-i18n="additionalInfo">Additional Information</h3><p data-i18n="tryProject">The released project can be played on itch.io.</p><div class="visuals"><img src="deborah-media-28.png" alt=""></div></div></article>
+
+  <div class="play-box">
+    <h2 data-i18n="playTitle">Play the released project</h2>
+    <p data-i18n="playText">Deborah Adventures: Mr. Fear is available on the Diversity Games Studios itch.io page.</p>
+    <a class="btn light" href="https://diversity-games-studios.itch.io/deborah-adventures-mr-fear" target="_blank" rel="noopener">itch.io ↗</a>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 Kazybek</span><span>Deborah Adventures: Mr. Fear</span></footer>
+
+<script>
+const tr={
+en:{intro:"A single-player top-down adventure and my first released game project. Deborah Howard, a professional treasure hunter, joins a reconnaissance squad sent to investigate the disappearance of three employees on Island “L”.",viewDeck:"View presentation",playGame:"Play on itch.io ↗",presentationTitle:"Project presentation",presentationText:"Web version based on the original project presentation.",information:"Information",setting:"Setting and some background",gameplay:"Gameplay",damage:"Damage system",obstacles:"Obstacle system",additional:"Additional mechanics",additionalInfo:"Additional Information",tryProject:"The released project can be played on itch.io.",playTitle:"Play the released project",playText:"Deborah Adventures: Mr. Fear is available on the Diversity Games Studios itch.io page."},
+ru:{intro:"Одиночная приключенческая игра с видом сверху и мой первый выпущенный игровой проект. Профессиональная охотница за сокровищами Дебора Ховард входит в разведывательную группу, отправленную расследовать исчезновение трёх сотрудников на острове «L».",viewDeck:"Смотреть презентацию",playGame:"Играть на itch.io ↗",presentationTitle:"Презентация проекта",presentationText:"Веб-версия, основанная на оригинальной презентации проекта.",information:"Информация",setting:"Сеттинг и предыстория",gameplay:"Игровой процесс",damage:"Система урона",obstacles:"Система препятствий",additional:"Дополнительные механики",additionalInfo:"Дополнительная информация",tryProject:"В выпущенную версию проекта можно сыграть на itch.io.",playTitle:"Сыграть в выпущенный проект",playText:"Deborah Adventures: Mr. Fear доступна на странице Diversity Games Studios в itch.io."}
+};
+let lang=localStorage.getItem("portfolioLang")||"en";const b=document.getElementById("langToggle");
+function ap(){document.documentElement.lang=lang;document.querySelectorAll("[data-i18n]").forEach(e=>{const v=tr[lang][e.dataset.i18n];if(v)e.innerHTML=v});b.textContent=lang==="en"?"RU":"EN";localStorage.setItem("portfolioLang",lang)}
+b.onclick=()=>{lang=lang==="en"?"ru":"en";ap()};ap();
+document.addEventListener("contextmenu",e=>{if(e.target.closest("img"))e.preventDefault()});
+document.addEventListener("dragstart",e=>{if(e.target.closest("img"))e.preventDefault()});
+</script>
+</body>
+</html>
