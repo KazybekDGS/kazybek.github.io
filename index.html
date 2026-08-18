@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kazybek Yeleussizov — Game Designer portfolio.">
+<title>Kazybek — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+#about{position:relative}
+#about .about-photo{
+  position:absolute;
+  left:5.5%;
+  top:150px;
+  width:260px;
+  margin:0;
+}
+#about .about-photo img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center 25%;
+  border:1px solid #2b2b2b;
+}
+@media(max-width:1100px){
+  #about .about-photo{position:static;width:min(280px,100%);margin:30px 0}
+}
+</style>
+
+<style>
+img,video,picture{
+  -webkit-user-drag:none;
+  user-drag:none;
+  -webkit-touch-callout:none;
+  user-select:none;
+}
+</style>
+
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><span>K</span>azybek</a>
+  <nav>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#work" data-i18n="nav_work">Work</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <button id="langToggle" class="lang">RU</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="kicker">GAME DESIGNER</p>
+    <h1>Designing games<br><em>through systems, levels & stories.</em></h1>
+    <p class="hero-text" data-i18n="hero_text">I create game concepts, mechanics, stories, worlds and visual experiences — from the first idea to a clear playable vision.</p>
+    <div class="hero-actions">
+      <a class="btn light" href="#work" data-i18n="view_work">View my work</a>
+      <a class="text-link" href="#contact" data-i18n="contact_me">Contact me ↗</a>
+    </div>
+  </div>
+  <div class="hero-mark">
+    <div class="orb">K<span>•</span></div>
+    <p>PORTFOLIO<br>2026</p>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="section-label">01 / <span data-i18n="about_label">ABOUT</span></div>
+  <div>
+    <h2 data-i18n="about_title">Game design through<br><em>practice.</em></h2>
+    <div class="about-grid">
+      <p data-i18n="about_p1">I'm Kazybek, a game and creative designer focused on turning ideas into structured concepts, mechanics and experiences.</p>
+      <p data-i18n="about_p2">I work with game design, narrative design, worldbuilding and visual design. I also develop my own game projects and fictional universes.</p>
+    </div>
+    <div class="availability"><span></span><strong data-i18n="available">Available for work</strong><small data-i18n="available_desc">Open to remote work and willing to relocate for the right opportunity.</small></div>
+  </div>
+<div class="about-photo"><img src="kazybek-photo.jpg" alt="Kazybek — Game Designer"></div></section>
+
+
+<section id="work" class="section work">
+  <div class="section-top">
+    <div class="section-label">02 / <span data-i18n="work_label">SELECTED WORK</span></div>
+    <p data-i18n="work_intro">A selection of my current game design projects.</p>
+  </div>
+
+  <article class="case featured deborah-case">
+    <div class="case-visual steam-banner">
+      <img src="deborah-banner.png" alt="Deborah Adventures: Mr. Fear banner">
+    </div>
+    <div class="case-content">
+      <p class="tag">RELEASED PROJECT · ADVENTURE · RPG MAKER</p>
+      <h3>Deborah Adventures: Mr. Fear</h3>
+      <p data-i18n="deborah_desc">My first released game project: a single-player top-down adventure about treasure hunter Deborah Howard and a reconnaissance mission to the mysterious Island “L”.</p>
+      <div class="meta">
+        <div><b data-i18n="status">STATUS</b><span data-i18n="released">Released</span></div>
+        <div><b data-i18n="platform">PLATFORM</b><span>PC · itch.io</span></div>
+      </div>
+      <a class="case-link" href="deborah.html" data-i18n="view_presentation">View presentation →</a>
+    </div>
+  </article>
+
+  <article class="case featured">
+    <div class="case-visual steam-banner">
+      <img src="lone-lands-banner.png" alt="Lone Lands banner">
+    </div>
+    <div class="case-content">
+      <p class="tag">GAME DESIGN · SURVIVAL · WORLDBUILDING</p>
+      <h3>Lone Lands</h3>
+      <p data-i18n="lonelands_desc">A post-nuclear survival game set in the Kazakh steppe, focused on exploration, factions, companions, choices and consequences.</p>
+      <div class="meta">
+        <div><b data-i18n="role">ROLE</b><span>Game Designer</span></div>
+        <div><b data-i18n="focus">FOCUS</b><span>Mechanics · Worldbuilding · GDD</span></div>
+      </div>
+      <a class="case-link" href="lone-lands.html" data-i18n="case_study">View case study →</a>
+    </div>
+  </article>
+
+  <article class="case cyber-case">
+    <div class="case-visual steam-banner">
+      <img src="great-steppe-banner.png" alt="Cyberpunk: Great Steppe banner">
+    </div>
+    <div class="case-content">
+      <p class="tag">GAME CONCEPT · WORLDBUILDING · NARRATIVE DESIGN</p>
+      <h3>Cyberpunk: Great Steppe</h3>
+      <p data-i18n="great_steppe_desc">A cyberpunk game concept set in Neo-Karaganda in 2079, built around corporations, factions, nomads and the struggle for the future of the steppe.</p>
+      <a class="case-link" href="great-steppe.html" data-i18n="presentation">View presentation →</a>
+    </div>
+  </article>
+</section>
+
+
+<section id="skills" class="section skills-section">
+  <div class="section-label">03 / <span data-i18n="skills_label">CAPABILITIES</span></div>
+  <div class="skills-layout">
+    <h2 data-i18n="skills_title">What I<br><em>do.</em></h2>
+    <div class="skill-list">
+      <div><b>01</b><h3>Game Design</h3><p>GDD · Mechanics · Systems · Balancing · Level Design</p></div>
+      <div><b>02</b><h3>Narrative Design</h3><p>Story · Characters · Worldbuilding · Dialogue · Lore</p></div>
+      
+      <div><b>03</b><h3>Creative Development</h3><p>Concepts · Prototypes · Research · Project Direction</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tools">
+  <div class="section-label">04 / <span data-i18n="tools_label">TOOLS</span></div>
+  <div class="tool-row"><span>Unreal Engine</span><span>GameGuru MAX</span><span>RPG Maker MV/MZ</span><span>GitHub</span><span>GDD</span></div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="section-label">05 / CONTACT</div>
+  <div>
+    <h2 data-i18n="contact_title">Contact</h2>
+    <p data-i18n="contact_text">For work opportunities, professional communication and other inquiries.</p>
+    <div class="contact-links">
+      <a href="mailto:kazybeke02@gmail.com"><span data-i18n="personal_email">Personal Email</span> ↗</a>
+      <a href="mailto:diversitygamesstudios@gmail.com"><span data-i18n="studio_email">Studio Email</span> ↗</a>
+      <a href="https://t.me/diversitygamesstudios" target="_blank" rel="noopener">Telegram ↗</a>
+      <a href="https://www.instagram.com/diversitygamesstudios" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 Kazybek Yeleussizov</span><span data-i18n="footer">Game Designer Portfolio.</span></footer>
+<script src="script.js"></script>
+
+<script>
+/* Basic media-download deterrence. Note: browser-delivered media cannot be made impossible to save. */
+document.addEventListener("contextmenu", function(e){
+  if (e.target.closest("img, video, audio, picture")) e.preventDefault();
+});
+document.addEventListener("dragstart", function(e){
+  if (e.target.closest("img, video, audio, picture")) e.preventDefault();
+});
+document.addEventListener("keydown", function(e){
+  const k = e.key.toLowerCase();
+  if ((e.ctrlKey || e.metaKey) && (k === "s" || k === "u")) e.preventDefault();
+});
+document.querySelectorAll("img").forEach(img => {
+  img.setAttribute("draggable","false");
+  img.addEventListener("contextmenu", e => e.preventDefault());
+});
+</script>
+
+</body>
+</html>
